@@ -5,10 +5,18 @@
 </p>
 
 <p align="center">
-  Tracking leakage incidents • Estimating water loss • Supporting smarter maintenance decisions
+  Tracking Leakage Incidents • Estimating Water Loss • Supporting Smarter Maintenance Decisions
 </p>
 
 ---
+
+## 🎓 Course-End Project
+
+- **Project Title:** Water Leakage and Loss Analyzer
+- **Project Type:** Course-End Project
+- **Domain:** Environment
+- **Course:** Python Programming Laboratory
+- **Technologies:** Python, Oracle Database, SQL
 
 ## 🌊 About the Project
 
@@ -16,7 +24,7 @@ Water is one of our most valuable natural resources, and leakage can lead to sig
 
 **Water Leakage and Loss Analyzer** is a Python-based application integrated with Oracle Database that records water leakage incidents, calculates estimated water loss, identifies recurring leakage locations, and generates reports to support maintenance decisions.
 
-This project aims to make leakage monitoring more organized, data-driven, and efficient.
+Developed as part of our **Python Programming Laboratory Course-End Project**, this application applies programming and database concepts to a practical environmental problem, with a focus on water conservation and efficient leakage monitoring.
 
 ## ✨ Key Features
 
@@ -29,7 +37,7 @@ This project aims to make leakage monitoring more organized, data-driven, and ef
 - 🚨 **High-Priority Reports** — Display incidents requiring urgent attention.
 - 🛠️ **Maintenance Recommendations** — Support maintenance planning using incident data.
 - 🗄️ **Database Integration** — Store and retrieve records using Oracle Database.
-- ✅ **Input Validation** — Handle user input and improve data reliability.
+- ✅ **Input Validation** — Validate user input and improve data reliability.
 
 ## 🛠️ Technology Stack
 
@@ -43,31 +51,34 @@ This project aims to make leakage monitoring more organized, data-driven, and ef
 ## 📁 Project Structure
 
 ```text
-water-leakage-analyzer-console/
+water-leakage-analyser/
 ├── README.md
+├── .gitignore
 ├── database.sql
 └── console/
     ├── water_leakage_pro.py
     ├── requirements.txt
-    └── .gitignore
+    ├── dashboard.py
+    ├── project_report.py
+    └── test_dashboard.py
 ```
 
 ## ⚙️ Getting Started
 
 ### Prerequisites
 
+Before running the application, ensure you have:
+
 - Python 3.10 or later
 - Oracle Database
 - An Oracle database user with the required permissions
-- `python-oracledb` package
+- The `python-oracledb` Python package
 
 ### 1. Clone the Repository
 
-Replace `YOUR_USERNAME` with your GitHub username.
-
 ```bash
-git clone https://github.com/YOUR_USERNAME/water-leakage-analyzer-console.git
-cd water-leakage-analyzer-console
+git clone https://github.com/hasinibantu/water-leakage-analyser.git
+cd water-leakage-analyser
 ```
 
 ### 2. Install Dependencies
@@ -87,11 +98,11 @@ This script creates the `leakage_records` table used by the application.
 The application uses the following database settings:
 
 - **Username:** `water_user`
-- **Database service:** `localhost:1521/FREEPDB1`
+- **Database Service:** `localhost:1521/FREEPDB1`
 
-Ensure the database service is running and the database user has the required permissions. The application prompts for the database password when it starts.
+Ensure the Oracle Database service is running and the database user has the required permissions.
 
-> 🔐 Never upload database passwords, credentials, or other secrets to GitHub.
+The application prompts for the database password when it starts. Never publish database passwords or other credentials in your repository.
 
 ### 5. Run the Application
 
@@ -99,7 +110,7 @@ Ensure the database service is running and the database user has the required pe
 python console/water_leakage_pro.py
 ```
 
-Use the interactive menu to record leakage incidents, view reports, analyze water loss, and access maintenance recommendations.
+Use the interactive menu to record leakage incidents, view reports, analyze water loss, and review maintenance recommendations.
 
 ## 📊 Available Reports
 
@@ -138,6 +149,13 @@ The `leakage_records` table contains the following fields:
 | `water_loss` | Estimated water loss in liters |
 | `leak_type` | Type of leakage |
 | `priority` | Incident priority |
+
+## 🔐 Security
+
+- Do not commit database passwords or credentials.
+- Use a dedicated database account with appropriate permissions.
+- Keep private data and sensitive configuration files out of the repository.
+- Review all files before pushing changes to GitHub.
 
 ## 🚀 Future Enhancements
 
